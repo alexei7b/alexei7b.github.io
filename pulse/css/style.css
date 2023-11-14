@@ -1,0 +1,218 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: relative;
+    height: 53px;
+    background-color: #212121;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+   list-style-type: none;
+    margin: 0;
+    padding: 18px 70px;
+}
+.menu a{
+    color: #FFF;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 15px; 
+text-decoration: none;
+
+}
+
+.menu .menu__item{
+   border-right: 2px dotted black;
+   padding-right: 30px;
+}
+.menu .menu__item:nth-last-child{
+    border-right: none;
+}
+.subheader{
+    position: absolute;
+    top: 53px;
+    height: 84px;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%
+}
+.subheader .subheader__logo{
+    display: block;
+    margin-top: 20px;
+    max-width: 100%
+}
+.subheader .subheader__official{
+    color: #FFF;
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 100;
+margin-top: 3px;
+opacity: .5;
+}
+.subheader .subheader__call{
+    margin-top: 25px;
+    color: #FFF;
+text-align: right;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 12px;
+}
+.subheader .subheader__phone{
+    display: block;
+    margin-top: 5px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+text-transform: uppercase;
+text-decoration: none;
+text-align: right;
+}
+.subheader .subheader__btn{
+    margin-top: 20px;
+    display: block;
+    width: 172px;
+height: 46px;
+border-radius: 4px;
+background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+
+color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 46px; /* 328.571% */
+text-transform: uppercase;
+}
+.promo{
+    min-height: 715px;
+    padding: 148px 0 186px 0;
+    background: url("../img/uber_bg.png") center center/cover no-repeat;    
+}
+h1.promo__header{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+   
+    text-transform: uppercase;
+}
+h2.promo__subheader{
+    margin-top: 22px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+
+text-transform: uppercase;
+text-align: center;
+}
+.promo__text{
+    margin-top: 16px;
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.promo__btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 115px;
+    width: 259px;
+height: 63px;
+border-radius: 4px;
+background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+
+color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 63px; /* 350% */
+text-transform: uppercase;
+
+}
+.reasons{
+    min-height: 849px;
+    padding: 20px 0 67px 0;
+}
+.label{
+    display: block;
+    margin: 0 auto;
+    width: 113px;
+height: 24px;
+background-color: #000;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 100% */
+text-transform: uppercase
+}
+.title{
+    margin-top: 33px;
+    color: #222;
+text-align: center;
+font-family: Roboto;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 126.316% */
+text-transform: uppercase;
+}
+.reasons .reasons_block{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 16px;
+}
+.reasons .reasons_block .reasons_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    width: 116px;
+height: 116px;
+background-color: #1EACC7;
+border-radius: 100%;
+}
+.reasons .reasons_block .reasons_descr{
+    width: 371px;
+}
+.reasons .reasons_block .reasons_subtitle{
+    color: #1EACC7;
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+}
+.reasons .reasons_block .reasons_text{
+    margin-top: 2px;
+    color: #202020;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 21px;
+}

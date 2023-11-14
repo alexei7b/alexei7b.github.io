@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto-Black.eot');
+    src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Black.woff') format('woff'),
+    url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    position: relative;
+    min-height: 51px;
+    background-color: #212121;
+}
+nav{
+    height: 50px;
+    background: #212121;
+    z-index: 2;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 90px;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link{
+    color: #FFF;
+    font-family: 'Roboto Black';
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 15px;
+}
+.subheader{
+    height: 87px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    position:absolute;
+}
+.subheader .subheader_logo{
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+.subheader .subheader_offical{
+    margin-top: 6px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 100;
+opacity: 0.5;
+}
+.subheader .subheader_call{
+    margin-top: 18px;
+    color: #FFF;
+text-align: right;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 14px;
+opacity: 0.5;
+}
+.subheader .subheader_phone{
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+text-transform: uppercase;
+}
+.subheader .subheader_btn{
+    margin-top: 22px;
+    width: 162px;
+    height: 46px;
+    color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 328.571% */
+text-transform: uppercase;
+border-radius: 4px;
+background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+}
+.promo{
+    padding: 150px 0 185px 0;
+    min-height: 714px;
+    background: url('../img/uber_bg.png') center center/cover no-repeat;
+}
+.promo .promo_header{
+    color: #FFF;
+text-align: center;
+font-family: 'Roboto Black';
+font-size: 60px;
+font-style: normal;
+font-weight: 900;
+line-height: 24px; /* 40% */
+text-transform: uppercase;
+}
+.promo .promo_subheader{
+    text-align: center;
+    margin-top: 22px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+text-transform: uppercase;
+}
+.promo .promo_descr{
+    margin-top: 16px;
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 115px;
+    width: 259px;
+height: 63px;
+border-radius: 4px;
+background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 350% */
+text-transform: uppercase;
+}
+.reasons{
+    min-height: 849px;
+    padding: 20px 0 64px 0;
+}
+.label{
+    width: 113px;
+height: 24px;
+margin: 0 auto;
+background-color: #000;
+padding: 5px 10px;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 11px; /* 100% */
+text-transform: uppercase;;
+}
+.title{
+    margin-top: 33px;
+    color: #222;
+text-align: center;
+font-family: Roboto;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 126.316% */
+text-transform: uppercase;
+}
+.reasons .reasons_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.reasons .reasons_block .reasons_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+height: 116px;
+background: #1EACC7;
+border-radius: 100%;
+margin-right: 25px;
+}
+.reasons .reasons_block .reasons_descr{
+    width: 343px;
+}
+
+.reasons .reasons_block .reasons_subtitle{
+    color: #1EACC7;
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+}
+.reasons .reasons_block .reasons_text{
+    color: #202020;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 21px;
+}
+
+

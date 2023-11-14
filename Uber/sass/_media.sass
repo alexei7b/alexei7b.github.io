@@ -1,0 +1,256 @@
+@media(max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+            line-height: 50px
+    .reasons
+        &_block
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 300px
+    .choice
+        padding: 55px 0
+        min-height: 840px
+    .require
+        br
+            display: none
+    .footer
+        &_links
+            width: 330px
+        &_mobile
+            display: flex
+            a
+                margin: 0 3px
+        // &_wrapper > div
+        //     width: 50%
+        //     &:ntn-child(1)
+        //         width: 25%
+        //     &:ntn-child(3)
+        //         width: 25%
+        //         diplay: flex
+        //         justify-content: flex-end
+
+@media(max-width: 991px)
+    .title
+        font-size: 28px
+        line-height: 28px
+    .menu
+        &_item
+            padding-right: 11px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            width: 100%
+            height: 40px
+    .promo
+        &_header
+            font-size: 40px
+            line-height: 40px
+        &_subheader
+            font-size: 30px
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_round
+            margin-right: 0
+        &_descr
+            width: 300px
+            margin-top: 20px
+    .mobile
+        &_item
+            width: 239px
+    .choice
+        min-height: 800px
+        &_img
+            width: 100%
+    .world
+        min-height: 650px
+    .footer
+        &_wrapper
+            display: flex
+
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        &_social
+            width: 160px
+            margin: 0 auto
+            margin-top: 15px
+            order: 2
+        &_links
+            order: 1
+            display: flex
+            flex-direction: column
+            position: relative
+            width: 100%
+            margin: 0 auto
+            margin-top: 20px
+            align-items: center
+            a
+                margin-right: 8px
+
+        &_mobile
+            order: 3
+            margin-top: 20px
+
+        // &_wrapper>div
+        //     width: 100%
+        //     display: flex
+        //     justify-content: center
+        //     margin-bottom: 20px
+@media(max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 20px
+            text-decoration: none
+        &_active
+            left: 0
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            translate: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            color: #FFF
+            text-align: center
+            font-family: Roboto
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 12px
+            text-transform: uppercase
+            margin-top: 10px
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            font-size: 40px
+            line-height: 40px
+@media(max-width: 575px)
+    nav
+        height: 30px
+    .subheader
+        height: 60px
+        top: 30px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            color: #FFF
+            text-align: center
+            font-family: Roboto
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 8px
+    .promo
+        min-height: 400px
+        padding: 101px 0 34px 0 /*+60px потому что у subheader position: absolute, и он 60px*/
+        &_header
+            font-size: 30px
+            line-height: 30px
+            padding: 0 22px
+        &_subheader
+            margin-top: 33px
+            font-size: 20px
+            line-height: 20px
+            padding: 0 6px
+        &_descr
+            display: none
+        &_btn
+            width: 210px
+            height: 50px
+            color: #FFF
+            text-align: center
+            font-family: Roboto
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            text-transform: uppercase
+    .menu
+        width: 85%
+    .reasons
+        padding: 22px 0 36px 0
+        &_block
+            margin-top: 24px
+        &_round
+            width: 100px
+            height: 100px
+            margin-right: 23px
+        &_subtitle
+            font-size: 16px
+
+    .title
+        font-size: 16px
+        line-height: 16px
+        margin-top: 16px
