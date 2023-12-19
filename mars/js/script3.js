@@ -1,19 +1,5 @@
-/* Задания на урок:
 
-1) Реализовать функционал, что после заполнения формы и нажатия кнопки "Подтвердить" - 
-новый фильм добавляется в список. Страница не должна перезагружаться.
-Новый фильм должен добавляться в movieDB.movies.
-Для получения доступа к значению input - обращаемся к нему как input.value;
-P.S. Здесь есть несколько вариантов решения задачи, принимается любой, но рабочий.
-
-2) Если название фильма больше, чем 21 символ - обрезать его и добавить три точки
-
-3) При клике на мусорную корзину - элемент будет удаляться из списка (сложно)
-
-4) Если в форме стоит галочка "Сделать любимым" - в консоль вывести сообщение: 
-"Добавляем любимый фильм"
-
-5) Фильмы должны быть отсортированы по алфавиту */
+// 2) Если название фильма больше, чем 21 символ - обрезать его и добавить три точки
 
 'use strict';
 
@@ -37,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         poster = document.querySelector('.promo__bg'),
         genre = document.querySelector('.promo__genre'),
         movieList = document.querySelector('.promo__interactive-list'),
-        // добавим дополнительные переменные 
         addForm = document.querySelector('form.add'),  // наша фарма
         addInput = addForm.querySelector('.adding__input'),  // инпут куда вводим фильм
         checkbox = addForm.querySelector('[type="checkbox"]');  // чек бокс
@@ -48,23 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
     addForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const newFilm = addInput.value;
+        let newFilm = addInput.value;
         const favorite = checkbox.checked;
 
+        // 1 - создадим условие (что бы не было возможности вводить пустую строку)
+        if (newFilm) {
 
-        movieDB.movies.push(newFilm);
-        // применим  созданные нами ф-ции в addEventListener
-        // 5 - 
-        sortArr(movieDB.movies);
-        // 6- 
-        createMovieList(movieDB.movies, movieList);
+            // 2 - Обрезаем фильм если больше чем 21 символ
+            if (newFilm.length > 21) {
+                newFilm = `${newFilm.substring(0, 22)}...`;
+            }
+            movieDB.movies.push(newFilm);
+            sortArr(movieDB.movies);
 
-        // 7 - очищаем форму, что исчезли данные
+            createMovieList(movieDB.movies, movieList);
+        }
+
+
         event.target.reset();
 
     });
 
-    // 1 - 
+
     const deleteAdv = (arr) => {
         arr.forEach(item => {
             item.remove();
@@ -73,14 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // 2 - 
+
     const makeChanges = () => {
         genre.textContent = 'драма';
 
         poster.style.backgroundImage = 'url("img/bg.jpg")';
     };
 
-    // 3 - 
+
     const sortArr = (arr) => {
         arr.sort();
     };
@@ -102,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4- вызовем ф-ции
+
     deleteAdv(adv);
     makeChanges();
     sortArr(movieDB.movies);
