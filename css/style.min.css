@@ -567,6 +567,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
 }
+.menu__social img{
+  width: 25px;
+  height: 25px;
+}
 .menu__overlay {
   position: fixed;
   top: 0;
@@ -698,13 +702,13 @@ template {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.resume__column ul {
+.resume__column > ul {
   list-style-type: none;
 }
 .resume__column ul li {
   position: relative;
 }
-.resume__column ul li:after {
+.resume__column > ul > li:after {
   content: "";
   width: 1px;
   height: calc(100% + 16px);
@@ -766,6 +770,36 @@ template {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
+}
+.resume__item-body-descr{
+  list-style-type: disc;
+}
+.resume__item-body-descr li{
+    margin-bottom: 5px;
+}
+.resume__item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+    padding-left: 43px;
+}
+
+.resume__item-tags span {
+    padding: 5px 12px;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #333;
+    transition: .3s;
+}
+
+.resume__item-tags span:hover {
+    background: #FFA501;
+    color: #fff;
+    border-color: #FFA501;
 }
 
 .skills {
@@ -862,6 +896,12 @@ template {
   grid-template: repeat(2, 280px)/repeat(4, 280px);
   grid-auto-rows: 280px;
   gap: 5px;
+}
+.portfolio__wrapper-second {
+  grid-template: 280px / repeat(4, 280px);
+    .portfolio__item {
+        grid-column: span 2;
+    }
 }
 .portfolio__wrapper .vertical {
   grid-row: 1/3;
